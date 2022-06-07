@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    {% include 'partials/navbar.html' %}
+
+    
+    <h2>Buscar Incidencia</h2>
+
+    <form action="buscar_inc" method="GET">
+        <p>Nombre</p>
+        <input type="text" name="nombre" id="nombre">
+        <input type="submit" value="Buscar">
+
+    </form>
+   
+   
+    <h2>Sistema de automatización de servicios para incidencias, consultas, solicitudes y creaciones</h2>
+    <a href="{% static 'readme.txt' %}" target="_blank" class="btn btn-primary btn-lg rounded-0 my-3">Descargar readme.txt</a>
+
+</body>
+</html>

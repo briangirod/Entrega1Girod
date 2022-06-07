@@ -1,0 +1,22 @@
+{% load static %}
+
+
+
+{% block contenido %}
+    <form action="solicitud" method="POST">
+        {% csrf_token %}
+        <p>Nombre:</p>
+        <input type="text" name="nombre" required>
+        <p>Apellido:</p>
+        <input type="text" name="apellido" required>
+        <p>Solicitud:</p>
+        <input type="text" name="solicitud" required>
+
+       
+        <input type="submit" value="Enviar">
+
+
+    </form>
+
+
+{% endblock %}
